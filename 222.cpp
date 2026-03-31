@@ -10,14 +10,21 @@ int main()
     int swt;
 
     const int max{ 10 };
-    cout << "1 INT,2 SHORT,3 LONG,4 FLOAT,5 DOUBLE,6 CHAR,7 BOOL,8 STRING" << endl;
-    cout<< "Ваш Выбор: " << endl;
+    cout << "1 - INT" << endl;
+    cout << "2 - SHORT" << endl;
+    cout << "3 - LONG" << endl;
+    cout << "4 - FLOAT" << endl;
+    cout << "5 - DOUBLE" << endl;
+    cout << "6 - CHAR" << endl;
+    cout << "7 - BOOL" << endl;
+    cout << "8 - STRING" << endl;
+    cout << "Ваш Выбор: " << endl;
     cin >> swt;
     switch (swt) {
     case 1: {
         int numbers[max];
         int i{};
-        cout << "Введи инт" << endl;
+        cout << "Введите INT числа: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -34,7 +41,7 @@ int main()
     case 2: {
         short numbers[max];
         int i{};
-        cout << "Введи короткий" << endl;
+        cout << "Введите SHORT числа: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -52,7 +59,7 @@ int main()
     {
         long numbers[max];
         int i{};
-        cout << "Введи длинный" << endl;
+        cout << "Введите LONG числа: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -70,7 +77,7 @@ int main()
     {
         float numbers[max];
         int i{};
-        cout << "Введи флот" << endl;
+        cout << "Введите FLOAT: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -88,7 +95,7 @@ int main()
     {
         double numbers[max];
         int i{};
-        cout << "Введи двойной" << endl;
+        cout << "Введите DOUBLE: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -107,7 +114,7 @@ int main()
         char numbers[max];
         setlocale(0, "");
         int i{};
-        cout << "Введи знак" << endl;
+        cout << "Введите CHAR: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -125,7 +132,7 @@ int main()
     {
         bool numbers[max];
         int i{};
-        cout << "Введи труе фалсе" << endl;
+        cout << "Введите TRUE/FALSE: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -144,7 +151,7 @@ int main()
         string numbers[max];
         setlocale(0, "");
         int i{};
-        cout << "Введи Строки" << endl;
+        cout << "Введите STRING: " << endl;
         while (i < max)
         {
             cin >> numbers[i];
@@ -166,6 +173,10 @@ int main()
 
 
     }
+
+    int _;
+    cin >> _;
+    return 0;
 
 
 
