@@ -6,8 +6,8 @@ using namespace std;
 
 char board[3][3];
 
-string player1 = "Игрок 1";
-string player2 = "Игрок 2";
+string player1 = "igrok 1";
+string player2 = "igrok 2";
 
 int wins1 = 0;
 int wins2 = 0;
@@ -44,7 +44,7 @@ void printBoard()
     color(11, 0);
 
     cout << "\n";
-    cout << "      КРЕСТИКИ НОЛИКИ\n\n";
+    cout << "      KPECTUKU HOJlUKU\n\n";
 
     color(15, 0);
 
@@ -103,7 +103,7 @@ void move(char symbol, string player)
 
     while (true)
     {
-        cout << player << " (" << symbol << ") выберите клетку: ";
+        cout << player << " (" << symbol << ") BbIBERU KJIETKY: ";
         cin >> choice;
 
         if (choice >= 1 && choice <= 9)
@@ -119,7 +119,7 @@ void move(char symbol, string player)
         }
 
         color(12, 0);
-        cout << "Неверный ход!\n";
+        cout << "HEBEPHbIU` XOD!\n";
         color(15, 0);
     }
 }
@@ -138,7 +138,7 @@ void game()
             printBoard();
 
             color(10, 0);
-            cout << player1 << " победил!\n";
+            cout << player1 << " POBEDA!\n";
             color(15, 0);
 
             wins1++;
@@ -151,7 +151,7 @@ void game()
             printBoard();
 
             color(14, 0);
-            cout << "Ничья!\n";
+            cout << "HUCHYA!\n";
             color(15, 0);
 
             draws++;
@@ -167,7 +167,7 @@ void game()
             printBoard();
 
             color(10, 0);
-            cout << player2 << " победил!\n";
+            cout << player2 << " POBEDA!\n";
             color(15, 0);
 
             wins2++;
@@ -180,7 +180,7 @@ void game()
             printBoard();
 
             color(14, 0);
-            cout << "Ничья!\n";
+            cout << "HUCHYA!\n";
             color(15, 0);
 
             draws++;
@@ -197,13 +197,13 @@ void statistics()
     color(11, 0);
 
     cout << "\n";
-    cout << "        СТАТИСТИКА\n\n";
+    cout << "        CTATUCTUKA\n\n";
 
     color(15, 0);
 
-    cout << player1 << ": " << wins1 << " побед\n";
-    cout << player2 << ": " << wins2 << " побед\n";
-    cout << "Ничьи: " << draws << "\n\n";
+    cout << player1 << ": " << wins1 << " POBED\n";
+    cout << player2 << ": " << wins2 << " POBED\n";
+    cout << "HUCHYU: " << draws << "\n\n";
 
     system("pause");
 }
@@ -215,14 +215,14 @@ void settings()
     color(11, 0);
 
     cout << "\n";
-    cout << "         НАСТРОЙКИ\n\n";
+    cout << "         HACTPOU`KU\n\n";
 
     color(15, 0);
 
-    cout << "Введите имя игрока 1: ";
+    cout << "BBEDU UMYA UGROKA 1: ";
     cin >> player1;
 
-    cout << "Введите имя игрока 2: ";
+    cout << "BBEDU UMYA UGROKA 2: ";
     cin >> player2;
 
     cout << "\n";
@@ -240,40 +240,40 @@ void menu()
         color(11, 0);
 
         cout << "\n";
-        cout << "      КРЕСТИКИ НОЛИКИ\n\n";
+        cout << "      KPECTUKU HOJIUKU\n\n";
 
         color(15, 0);
 
-        cout << "1. Начать игру\n";
-        cout << "2. Статистика\n";
-        cout << "3. Настройки\n";
-        cout << "4. Выход\n\n";
+        cout << "1. HACHATb UGRY\n";
+        cout << "2. CTATUCTUKA\n";
+        cout << "3. HACTPOU`KA\n";
+        cout << "4. BbIXOD\n\n";
 
-        cout << "Выберите пункт: ";
+        cout << "BbIBERUTE PUNKT: ";
         cin >> choice;
 
         switch (choice)
         {
-            case 1:
-                game();
-                break;
+        case 1:
+            game();
+            break;
 
-            case 2:
-                statistics();
-                break;
+        case 2:
+            statistics();
+            break;
 
-            case 3:
-                settings();
-                break;
+        case 3:
+            settings();
+            break;
 
-            case 4:
-                exit(0);
+        case 4:
+            exit(0);
 
-            default:
-                color(12, 0);
-                cout << "\nОшибка!\n";
-                color(15, 0);
-                system("pause");
+        default:
+            color(12, 0);
+            cout << "\nOWUBKA!\n";
+            color(15, 0);
+            system("pause");
         }
     }
 }
